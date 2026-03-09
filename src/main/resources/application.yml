@@ -1,0 +1,24 @@
+server:
+  port: 8080
+
+
+some:
+  dude:
+    phrase: "Губа на губу, щека на щеку"
+
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:55432/not-avito-db
+    #username: not_avito
+    #password: not_avito
+    #driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+    show-sql: true
