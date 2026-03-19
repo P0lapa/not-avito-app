@@ -24,7 +24,8 @@ dependencies {
     runtimeOnly ("org.postgresql:postgresql")
 
     // OpenAPI (Swagger)
-    implementation ("org.springdoc:springdoc-openapi-starter-webmvc-ui")
+    //implementation ("org.springdoc:springdoc-openapi-starter-webmvc-ui")
+    implementation("org.springdoc:springdoc-openapi-starter-webmvc-ui:2.3.0")
 
     // Lombok
     compileOnly ("org.projectlombok:lombok")
@@ -42,7 +43,7 @@ dependencies {
 
     // Testing
     testImplementation ("org.springframework.boot:spring-boot-starter-test")
-    testImplementation ("org.springframework.boot:spring-boot-starter-data-jpa-test")
+//    testImplementation ("org.springframework.boot:spring-boot-starter-data-jpa-test")
     testRuntimeOnly ("org.junit.platform:junit-platform-launcher")
 }
 
