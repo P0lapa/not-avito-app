@@ -9,9 +9,9 @@ some:
 
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:55432/not-avito-db
-    #username: not_avito
-    #password: not_avito
+    url: jdbc:postgresql://localhost:55432/not_avito_db
+    username: not_avito
+    password: not_avito
     #driver-class-name: org.postgresql.Driver
 
   jpa:
@@ -19,6 +19,7 @@ spring:
       ddl-auto: update
     properties:
       hibernate:
-        dialect: org.hibernate.dialect.PostgreSQLDialect
+        #dialect: org.hibernate.dialect.PostgreSQLDialect
         format_sql: true
     show-sql: true
+    open-in-view: false
